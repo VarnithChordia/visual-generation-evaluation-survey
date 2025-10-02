@@ -1,4 +1,4 @@
-# Video, Image-to-Video, World & Motion Generation Evaluation Metrics
+# 🎥 Video, Image-to-Video, World & Motion Generation Evaluation Metrics
 
 In this section we collect **metrics, paper links, and code repos** for evaluating video generation across:  
 - **Text-to-Video**  
@@ -12,7 +12,35 @@ Each entry includes:
 - **Code / Repo** 
 ---
 
-## Text to Video Generation Metrics
+## 📚 References (Table of Contents)
+
+| Category | Reference                                     | Paper | Year |
+|----------|-----------------------------------------------|-------|------|
+| Text-to-Video | [FETV](#fetv)                                 | Liu et al., *Fine-Grained Evaluation of T2V Generation* | 2023 |
+| Text-to-Video | [DEVIL](#devil-dynamics-centric-protocol)     | Liao et al., *Evaluation of T2V Models: A Dynamics Perspective* | 2024 |
+| Text-to-Video | [JEDi](#jedi-jepa-embedding-distance)         | Voynov et al., *Beyond FVD: Enhanced Metrics for Video Generation* | 2024 |
+| Text-to-Video | [FVMD](#fvmd-fréchet-video-motion-distance)   | Liu et al., *Fréchet Video Motion Distance* | 2024 |
+| Text-to-Video | [VAMP](#vamp-visual--physics-metric)          | Wang et al., *What You See Is What Matters* | 2024 |
+| Text-to-Video | [EvalCrafter](#evalcrafter)                   | Liu et al., *EvalCrafter Benchmarking* | 2024 |
+| Text-to-Video | [VBench](#vbench)                             | Huang et al., *VBench: Benchmark Suite for Video Generation* | 2024 |
+| Text-to-Video | [VideoScore](#videoscore)                     | Pan et al., *VideoScore: A Learned Metric* | 2024 |
+| Text-to-Video | [T2VScore](#t2vscore)                         | Wang et al., *Automatic Evaluation for T2V* | 2024 |
+| Text-to-Video | [LiFT](#lift-reward--human-feedback-alignmen) | Wang et al., *Leveraging Human Feedback for T2V Alignment* | 2024 |
+| Text-to-Video | [LOVE](#love)                                 | Zhang et al., *Large-scale Open Video Evaluator* | 2025 |
+| Text-to-Video | [GRADEO](#gradeo)                             | Sun et al., *Explainable Video Evaluation* | 2025 |
+| Text-to-Video | [T2V-CompBench](#t2v-compbench)               | Sun et al., *Compositional Benchmarking for T2V* | 2025 |
+| Image-to-Video | [AnimateBench](#animatebench)                 | Zhang et al., *AnimateBench: Personalized Image Animation* | 2024 |
+| Image-to-Video | [AIGCBench](#aigcbench-i2v)                   | Fan et al., *AIGCBench: Comprehensive Benchmarking* | 2024 |
+| Image-to-Video | [VBench++](#vbench)                           | Huang et al., *Extending VBench to Image-to-Video* | 2024 |
+| World Generation | [WorldScore](#worldscore)                     | Duan et al., *WorldScore: Unified Multi-Scene Evaluation* | 2025 |
+
+---
+
+
+
+
+
+## 📺 Text to Video Generation Metrics
 
 ### DEVIL (Dynamics-Centric Protocol)
 - **Paper**: *Evaluation of Text-to-Video Generation Models: A Dynamics Perspective* (Liao et al., 2024) [arXiv](https://arxiv.org/pdf/2407.01094)  
@@ -52,17 +80,6 @@ Each entry includes:
   - Motion Plausibility Score (physics-based realism)  
 - **Summary**: Combines frame-level visual consistency with physical plausibility of motion.  
 - **Repo**:
-
----
-
-### FVD (Fréchet Video Distance)  
-- **Paper**: *Towards Accurate Generative Models of Video* (Unterthiner et al., 2018) [arXiv](https://arxiv.org/abs/1812.01717)  
-- **Axes**:  
-  - Quality  
-  - Temporal coherence  
-  - Diversity  
-- **Summary**: I3D embeddings → Fréchet distance between real vs. generated feature distributions.  
-- **Repo**: [![Stars](https://img.shields.io/github/stars/bioinf-jku/TTUR.svg?style=social&label=TTUR)](https://github.com/bioinf-jku/TTUR)
 
 ---
 
@@ -169,7 +186,7 @@ Each entry includes:
 
 ---
 
-##  Image-to-Video Generation Metrics
+## 🖼 Image-to-Video Generation Metrics
 
 ### AnimateBench  
 - **Paper**: *AnimateBench* (Zhang et al., CVPR 2024) [arXiv](https://arxiv.org/abs/2309.08526)  
